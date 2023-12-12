@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@500&family=Rethink+Sans:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body, html {
+    background-color: #f2efe7;
+    min-height: 100vh;
+}
+
+
+.main-container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.main-container h1 {
+    margin-top: 135px;
+    margin-left: 120px;
+    font-size: 45px;
+}
+
+.info-block_img {
+    margin-top: 80px;
+    margin-left: 100px;;
+    width: 350px;
+    height: 350px;
+    border-radius: 80%;
+}
+
+.info-block_list {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    margin-right: 20%;
+    margin-left: 120px;
+    list-style-type: none; /* Убирает стандартные маркеры */
+    padding-left: 0; /* Убирает отступы слева */
+  }
+
+.info-block_list li::before {
+
+    content: "★ "; /* Добавляет звездочку перед текстом элемента списка */
+    color: gold; /* Цвет звездочки */
+    padding-right: 5px; /* Добавляет небольшой отступ справа от звездочки */
+  }
+
+.info-block_btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+    width: 150px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.info-block_dis_btn {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 220px;
+    height: 36px;
+    border-radius: 20px;
+    color: black;
+    border: 3px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.info-block_dis_btn:hover {
+    background-color: grey;
+    transition: 0.3s ease-in-out;
+}

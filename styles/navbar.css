@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rethink+Sans:wght@700&family=Roboto&display=swap');
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navbar_center_items {
+    font-weight: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar_center_item {
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 0 5px;
+    margin-left: 20px;
+    transition: all 0.3s ease-out; /* Анимация для плавности */
+}
+
+.navbar_center_item::after {
+    position: absolute;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0; 
+    bottom: 0;
+    background: black;
+    transition: 0.3s ease-out;
+}
+
+.navbar_center_item:hover::after {
+    width: 100%; 
+}
+
+.navbar_button {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 30px;
+    width: 150px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+}
